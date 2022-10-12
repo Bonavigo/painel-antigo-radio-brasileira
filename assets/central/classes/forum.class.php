@@ -1,36 +1,9 @@
 <?php
 	class Forum {
 		public function bobba($texto) {
+			//A censura era inútil, era só uma lista de palavrões. Para não ficar feio, apaguei.
 			$filtro = array(
-				'porra' => 'bobba',
-				'phorra' => 'bobba',
-				'poha' => 'bobba',
-				'caralho' => 'bobba',
-				'caralhada' => 'bobba',
-				'putaria' => ' bobba ',
-				'buceta' => ' bobba ',
-				'foder' => ' bobba ',
-				'fhoder' => ' bobba ',
-				'foda-se' => ' bobba ',
-				'foda ' =>' bobba ',
-				'vai tomar no cu' => 'bobba',
-				'Vai se foder' => 'bobba',
-				'Vai se Foder' => 'bobba',
-				'vai se foder' => 'bobba',
-				'vai pra pqp' => 'bobba',
-				'vai pra puta que te pariu' => 'bobba',
-				'vai pra puta que pariu' => 'bobba',
-				'vai pra casa do caralho' => 'bobba',
-				'puta' => 'bobba',
-				'filho de puta' => 'bobba',
-				'filo de puta' => 'bobba',
-				'filho da puta' => 'bobba',
-				'sua puta' => 'bobba',
-				'seu arrombado' => 'bobba',
-				'sua arrombada' => 'bobba',
-				'corno' => 'bobba',
-				'corna' => 'bobba',
-				'fodasse' => ' bobba '
+				'bobba' => 'bobba',
 			);
 			$censurado = strtr($texto, $filtro);
 			return $censurado;
